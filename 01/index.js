@@ -3,7 +3,7 @@ const jogador2 = "tesoura";
 
 if (jogador1 == "pedra") {
     if (jogador2 == "tesoura") {
-        console.log("Pedra.");
+        console.log("Pedra");
     } else if (jogador2 == "papel") {
         console.log("papel");
     } else if (jogador2 == "pedra") {
