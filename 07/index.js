@@ -1,5 +1,17 @@
-const aposentada = false;
-const portadoraDeDoenca = false;
-const totalDeRendimentos = 3000000; //emCentavos
+const aposentada = true;
+const portadoraDeDoenca = true;
+const totalDeRendimentos = 2855970; //emCentavos
 
-//seu código aqui
+if (aposentada === false && portadoraDeDoenca === false && totalDeRendimentos > 2855970) {
+    console.log("**PEGA LEAO**")
+} else if (aposentada === true && portadoraDeDoenca === false && totalDeRendimentos > 2855970) {
+    console.log("**ISENTA**")
+} else if (aposentada === true && portadoraDeDoenca === true && totalDeRendimentos > 2855970) {
+    console.log("**ISENTA**")
+} else if (aposentada === false && portadoraDeDoenca === true && totalDeRendimentos > 2855970) {
+    console.log("**ISENTA**")
+} else if (aposentada === false && portadoraDeDoenca === false && totalDeRendimentos <= 2855970) {
+    console.log("**VAZA LEAO! JA TA DIFICIL SEM VOCE**")
+} else {
+    console.log("**ISENTA**");
+}
