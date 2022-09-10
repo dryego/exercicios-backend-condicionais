@@ -6,3 +6,15 @@ const mesesDecorridos = 12;
 
 // Soma das parcelas já pagas pelo aluno nos meses anteriores (em centavos). Se for igual a 18 mil reais, o aluno não deve pagar mais nada, pois já quitou a dívida.
 const totalJaPagoPeloAluno = 1000000;
+
+const porcentagemDaParcela = rendaMensalEmCentavos * 18 / 10000; //porcentagem em centavos
+
+if (rendaMensalEmCentavos < 200000 || mesesDecorridos > 60) {
+    console.log("Você esta isento do pagamento!");
+
+} else if (rendaMensalEmCentavos >= 200000 && mesesDecorridos <= 60 && totalJaPagoPeloAluno < 1800000) {
+    console.log(`O valor da parcela desse mês é R$${porcentagemDaParcela.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`);
+
+} else if (totalJaPagoPeloAluno >= 1800000) {
+    console.log("Você já quitou seu pagamento. Parabéns pelo sucesso!")
+}
