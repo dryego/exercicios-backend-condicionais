@@ -1,4 +1,4 @@
-const diaDaSemana = 1;
+const diaDaSemana = 10;
 
 const dia1 = "Segunda-feira";
 const dia2 = "Terça-feira";
@@ -22,8 +22,10 @@ if (diaDaSemana == 1) {
     console.log(dia6);
 } else if (diaDaSemana == 7) {
     console.log(dia7);
+} else if (diaDaSemana < 1 || diaDaSemana > 7) {
+    console.log("O dia da semana informado não é válido.")
 } else {
-    console.log("Dia invalido.")
+    console.log("Dia da semana invalido.")
 }
 
 
